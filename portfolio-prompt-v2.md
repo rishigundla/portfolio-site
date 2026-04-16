@@ -58,7 +58,7 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 - **Subtitle pills/badges**: `Tableau` . Power BI` . `Databricks` · `Microsoft Fabric` · `SQL` · `PySpark`
 - **Subtle animated background** — abstract data grid, flowing particles, or minimal generative art canvas (disable on mobile for performance)
 - **CTA buttons**: "View My Work" (scrolls to projects) | "Download Resume" (PDF link) | "Let's Connect" (scrolls to contact)
-- **Resume PDF**: `YOUR_RESUME_PDF_URL_HERE`
+- **Resume PDF**: `public/Rishikesh_Gundla_Resume.pdf`
   - Option A: Place your resume at `public/resume.pdf` in the project (the button already points to `/resume.pdf`)
   - Option B: Provide an external URL above (e.g., Google Drive, Dropbox link)
 - **Floating badge**: "Currently @ Nutanix" with a subtle glow or pulse animation
