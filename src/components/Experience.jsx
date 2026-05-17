@@ -10,7 +10,7 @@ const experiences = [
     period: 'April 2024 – Present',
     duration: '2 years',
     location: 'Bangalore, India',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
     bullets: [
       'Architect and deliver high-impact dashboards, scalable data models, and end-to-end analytical solutions using Tableau, Power BI, and SQL powering data-driven decision-making across business units',
       'Design and deploy enterprise-grade BI solutions leveraging Microsoft Fabric, Databricks, and PySpark streamlining reporting workflows and reducing time-to-insight at scale',

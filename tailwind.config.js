@@ -15,10 +15,10 @@ export default {
           600: 'var(--color-base-600)',
         },
         accent: {
-          DEFAULT: '#2dd4bf',
-          light: '#5eead4',
-          dark: '#14b8a6',
-          glow: 'rgba(45, 212, 191, 0.15)',
+          DEFAULT: 'rgb(var(--accent) / <alpha-value>)',
+          light: 'rgb(var(--accent-light) / <alpha-value>)',
+          dark: 'rgb(var(--accent-dark) / <alpha-value>)',
+          glow: 'rgb(var(--accent) / 0.15)',
         },
         surface: {
           DEFAULT: 'var(--color-surface)',
@@ -54,8 +54,8 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         pulseGlow: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(45, 212, 191, 0.3)' },
-          '50%': { boxShadow: '0 0 40px rgba(45, 212, 191, 0.6)' },
+          '0%, 100%': { boxShadow: '0 0 20px rgb(var(--accent) / 0.3)' },
+          '50%': { boxShadow: '0 0 40px rgb(var(--accent) / 0.6)' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },

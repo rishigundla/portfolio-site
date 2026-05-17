@@ -7,7 +7,7 @@ const certifications = [
   {
     title: 'Tableau Desktop Specialist',
     issuer: 'Tableau',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
     badgeImage: '/badges/tableau-desktop-specialist-badge.png',
     verifyLink: 'https://www.credly.com/badges/137c8743-d119-4b9d-9eb5-a04a8810221f/public_url',
   },

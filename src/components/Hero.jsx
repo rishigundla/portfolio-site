@@ -30,7 +30,7 @@ export default function Hero() {
         >
           Rishikesh
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-teal-300">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">
             Gundla
           </span>
         </motion.h1>
@@ -89,7 +89,7 @@ export default function Hero() {
               document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })
             }}
             className="w-full sm:w-auto px-8 py-3 rounded-xl bg-accent font-semibold text-sm hover:bg-accent-light transition-colors"
-            style={{ color: '#0a0a0f' }}
+            style={{ color: 'var(--color-base-900)' }}
           >
             View My Work
           </a>

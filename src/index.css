@@ -36,29 +36,35 @@
   --particle-color: 45, 212, 191;
   --grid-opacity: 0.04;
   --dot-opacity: 0.08;
+  --accent: 45 212 191;
+  --accent-light: 94 234 212;
+  --accent-dark: 20 184 166;
 }
 
 .light {
-  --color-base-900: #f8f9fa;
-  --color-base-800: #f1f3f5;
-  --color-base-700: #e9ecef;
-  --color-base-600: #dee2e6;
+  --color-base-900: #f1f3f5;
+  --color-base-800: #e9ecef;
+  --color-base-700: #dee2e6;
+  --color-base-600: #ced4da;
   --color-surface: #ffffff;
-  --color-surface-hover: #f1f3f5;
-  --color-surface-border: #dee2e6;
+  --color-surface-hover: #e9ecef;
+  --color-surface-border: #ced4da;
   --color-text-primary: #1a1a2e;
   --color-text-secondary: #495057;
   --color-text-muted: #868e96;
   --color-overlay: rgba(255, 255, 255, 0.8);
   --color-card-bg: rgba(255, 255, 255, 0.8);
-  --scrollbar-track: #f1f3f5;
+  --scrollbar-track: #e9ecef;
   --scrollbar-thumb: #ced4da;
   --scrollbar-thumb-hover: #adb5bd;
-  --hero-gradient-start: rgba(248, 249, 250, 0.3);
-  --hero-gradient-end: #f8f9fa;
+  --hero-gradient-start: rgba(241, 243, 245, 0.3);
+  --hero-gradient-end: #f1f3f5;
   --particle-color: 13, 148, 136;
   --grid-opacity: 0.08;
   --dot-opacity: 0.12;
+  --accent: 13 148 136;
+  --accent-light: 15 118 110;
+  --accent-dark: 19 78 74;
 }
 
 @layer base {
@@ -76,7 +82,7 @@
   }
 
   ::selection {
-    background: rgba(45, 212, 191, 0.3);
+    background: rgb(var(--accent) / 0.3);
     color: #fff;
   }
 

@@ -9,7 +9,7 @@ const education = [
     degree: 'Post Graduate Program',
     field: 'Data Science',
     period: 'December 2021 – January 2023',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
   {
     institution: 'Atharva College of Engineering',

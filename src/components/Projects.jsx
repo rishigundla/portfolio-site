@@ -14,7 +14,7 @@ const projects = [
     problem: 'Leadership needed an executive-level view of sales performance with fiscal year comparisons across products, regions, and business lines.',
     approach: 'Built a sales cockpit with KPI cards tracking total sales ($14.8M), margin, and cost, paired with trend analysis, top-10 product rankings, and a geographic heat map with FY toggle.',
     impact: 'Recognized as Tableau Viz of the Day with 35K+ views and 325+ favorites on Tableau Public.',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
   {
     title: 'Porter Delivery Time Analysis',
@@ -62,7 +62,7 @@ const projects = [
     problem: 'Social media performance was tracked separately across YouTube, Twitter, and Instagram with no unified view of growth and engagement.',
     approach: 'Designed a dark-themed cross-platform dashboard consolidating subscribers, followers, impressions, and engagement metrics with monthly trend comparisons per platform.',
     impact: 'Consolidated multi-platform social media metrics into a single performance view with 2.7K+ views on Tableau Public.',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
   {
     title: 'Customer Demographic Dashboard',
@@ -110,7 +110,7 @@ const projects = [
     problem: 'Electric vehicle market data across manufacturers, regions, and vehicle types lacked a consolidated analytical view for tracking adoption trends and performance.',
     approach: 'Built an interactive dashboard analyzing EV market data with key metrics on vehicle adoption, manufacturer comparisons, regional distribution, and performance indicators with dynamic filtering.',
     impact: 'Provided a comprehensive view of EV market trends enabling data-driven exploration of adoption patterns and manufacturer performance.',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
   {
     title: 'Northwind Traders Performance Dashboard',
@@ -158,7 +158,7 @@ const projects = [
     problem: 'Project portfolio data across costs, benefits, and delivery timelines lacked an executive-grade analytical view for data-driven decision-making.',
     approach: 'Built an executive-ready dashboard with cost and benefit tracking across projects, trend analysis by category, drill-down functionality for detailed metrics, KPI cards, and area charts for comprehensive visualization.',
     impact: 'Praised by the community for design quality, insight depth, color coding, and visual consistency with 79+ likes and 8+ comments on LinkedIn.',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
   {
     title: 'Adventure Works Report',
@@ -206,7 +206,7 @@ const projects = [
     problem: 'Aviation data spanning flight bookings, passenger records, airports, and flight schedules needed a reliable, incremental pipeline with full historical tracking of dimension changes.',
     approach: 'Built a Lakehouse Medallion pipeline using Delta Live Tables with Auto Loader streaming ingestion into Bronze, type casting and data quality validations in Silver, and DLT Auto-CDC for automatic SCD Type-2 tracking with versioned records (__START_AT/__END_AT timestamps), culminating in Gold aggregations for total bookings, passengers, flights, and revenue by airline routes.',
     impact: 'Delivered production-ready incremental streaming transformations with complete audit history, ensuring low-latency outputs for BI dashboards and demonstrating enterprise-grade CDC patterns.',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
   {
     title: 'Banking Analytics Declarative Pipeline',
@@ -254,7 +254,7 @@ const projects = [
     problem: 'Superstore retail data required an analytics pipeline that demonstrates modern Delta Lake optimization techniques beyond basic Medallion architecture patterns.',
     approach: 'Built a Medallion pipeline on Azure Databricks with ADLS Gen2 — Bronze for raw ingestion, Silver for validation and deduplication, and Gold for business-ready aggregations, showcasing advanced Delta Lake capabilities including time travel, table cloning, vacuum operations, liquid clustering, and deletion vectors, with Unity Catalog governance and a Databricks BI Dashboard.',
     impact: 'Delivered interactive BI dashboards with total sales, profit, and quantity KPIs with regional filtering and temporal analysis, while demonstrating modern Delta Lake optimization techniques for production workloads.',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
   {
     title: 'Amazon Retail Analytics Pipeline',
@@ -302,7 +302,7 @@ const projects = [
     problem: 'SQL proficiency across multiple dialects and industries needed a structured portfolio demonstrating advanced querying techniques on real-world datasets ranging from small to 1M+ rows.',
     approach: 'Built 13 end-to-end SQL projects spanning E-Commerce (Apple Stores, Amazon), Retail (Target, Walmart), Finance, Healthcare, Public Health (COVID-19), Gaming, Marketing, and Automotive using advanced techniques including window functions (ROW_NUMBER, RANK, LAG, LEAD), CTEs, recursive queries, multi-table joins, PIVOT operations, and cloud-native Databricks SQL with Delta Lake, complemented by 75+ daily SQL challenges for progressive skill development.',
     impact: 'Demonstrated production-level SQL proficiency across MySQL, PostgreSQL, and Databricks SQL with diverse industry applications, from analyzing 1M+ Apple Store records with correlation and time-series queries to cloud-native retail analytics on Delta Lake.',
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
 ]
 
@@ -364,7 +364,7 @@ function ProjectCard({ project, onClick, index = 0 }) {
             <span
               key={tag}
               className="px-2 py-0.5 rounded text-xs font-mono"
-              style={{ backgroundColor: 'var(--color-surface-border)', color: 'var(--color-text-muted)', opacity: 0.7 }}
+              style={{ backgroundColor: 'var(--color-surface-border)', color: 'var(--color-text-primary)', opacity: 0.7 }}
             >
               {tag}
             </span>
@@ -376,7 +376,7 @@ function ProjectCard({ project, onClick, index = 0 }) {
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
               className="ml-auto inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-accent text-xs font-semibold hover:bg-accent-light transition-colors shrink-0"
-              style={{ color: '#0a0a0f' }}
+              style={{ color: 'var(--color-base-900)' }}
             >
               View Project <HiExternalLink size={12} />
             </a>
@@ -455,7 +455,7 @@ function ProjectModal({ project, onClose }) {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-accent font-semibold text-sm hover:bg-accent-light transition-colors"
-              style={{ color: '#0a0a0f' }}
+              style={{ color: 'var(--color-base-900)' }}
             >
               View Project <HiExternalLink size={14} />
             </a>
@@ -508,12 +508,9 @@ export default function Projects() {
               onClick={() => setActiveFilter(filter)}
               className={`px-4 py-2 rounded-lg text-sm font-mono transition-all ${
                 activeFilter === filter
-                  ? 'bg-accent font-medium'
-                  : 'hover:bg-surface'
+                  ? 'bg-accent text-base-900 font-medium'
+                  : 'text-text-muted hover:bg-surface-border hover:text-text-primary'
               }`}
-              style={{
-                color: activeFilter === filter ? '#0a0a0f' : 'var(--color-text-muted)',
-              }}
             >
               {filter}
             </button>

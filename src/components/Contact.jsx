@@ -9,7 +9,7 @@ const socials = [
     href: 'mailto:gundlarishikesh@gmail.com',
     value: 'gundlarishikesh@gmail.com',
     icon: HiMail,
-    color: '#2dd4bf',
+    color: 'rgb(var(--accent))',
   },
   {
     label: 'LinkedIn',
