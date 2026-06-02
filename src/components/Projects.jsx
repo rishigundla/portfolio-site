@@ -293,6 +293,18 @@ const projects = [
     color: '#ec4899',
   },
   {
+    title: 'NovaCart Incremental Order Pipeline',
+    description: 'Fully incremental Medallion pipeline on the Databricks Lakehouse pulling NovaCart orders, products, and payments from Azure SQL via Lakehouse Federation, with SCD Type 2 history and governed Gold tables',
+    tags: ['Databricks', 'PySpark'],
+    category: 'Databricks',
+    thumbnail: 'https://raw.githubusercontent.com/rishigundla/novacart-databricks-project/main/images/novacart_architecture.png',
+    projectLink: 'https://github.com/rishigundla/novacart-databricks-project',
+    problem: 'NovaCart order, product, and payment data lived in an Azure SQL OLTP system not built for analytical scans or historical change tracking. Querying it directly strained the source database and missed changes such as price corrections and payment status updates.',
+    approach: 'Built a fully incremental Medallion pipeline that reads source tables directly from Azure SQL via Databricks Lakehouse Federation. A dual key watermark and per layer Delta control tables keep every run incremental and rerun safe. Bronze lands raw rows, Silver cleans and quarantines bad records, and Gold MERGEs the current state with SCD Type 2 history and category KPIs, publishing snapshots to a Unity Catalog Volume.',
+    impact: 'Delivered a single source of truth for order analytics that captures every change without touching the source database, with SCD Type 2 history for point in time analysis and restartable, watermark driven layers.',
+    color: '#818cf8',
+  },
+  {
     title: 'SQL Projects Portfolio',
     description: 'Comprehensive SQL portfolio featuring 13 real-world projects across 8 industries with 1M+ row datasets, advanced analytics, and 75+ daily SQL challenges spanning MySQL, PostgreSQL, and Databricks SQL',
     tags: ['SQL'],
@@ -304,9 +316,45 @@ const projects = [
     impact: 'Demonstrated production-level SQL proficiency across MySQL, PostgreSQL, and Databricks SQL with diverse industry applications, from analyzing 1M+ Apple Store records with correlation and time-series queries to cloud-native retail analytics on Delta Lake.',
     color: 'rgb(var(--accent))',
   },
+  {
+    title: 'AI Dashboard Factory',
+    description: 'AI powered factory that turns a raw CSV into a fully designed interactive dashboard in about 60 seconds, with a second mode that renders high fidelity wireframes for stakeholder discovery',
+    tags: ['Next.js', 'React'],
+    category: 'AI Engineering',
+    thumbnail: '/projects/dashboard-factory.png',
+    projectLink: 'https://ai-portfolio-dashboard-factory.vercel.app',
+    problem: 'Ad hoc dashboard requests are slow and manual. A business user waits days on a BI ticket, while BI engineers spend two to four days mocking dashboards in Figma before the real build starts. Dashboard creation is unstructured and slow.',
+    approach: 'Built a two mode factory on one shared chart engine. Ad hoc mode profiles a dataset through a streaming AI explanation and emits a themed interactive dashboard with KPIs, charts, filters, and PDF export. Wireframe mode feeds the same engine a per dataset recommendation to render a five KPI strip plus a four chart grid for stakeholder review. The engine renders typed chart specs (bar, line, donut, scatter, funnel) regardless of mode.',
+    impact: 'Compressed both the business request and engineer mockup timelines into a single 60 second flow. Replacing three hand coded templates with one data driven engine net deleted about 1,100 lines, on a turborepo monorepo with a reusable design system that anchors the whole AI portfolio.',
+    color: '#818cf8',
+  },
+  {
+    title: 'AI Narrative Generator',
+    description: 'Turns a finished dashboard into a written executive readout and a themed downloadable PPTX deck. Pick a sample dashboard, watch Claude stream the narrative, download the deck',
+    tags: ['Next.js', 'React'],
+    category: 'AI Engineering',
+    thumbnail: '/projects/narrative-generator.png',
+    projectLink: 'https://ai-portfolio-narrative-generator.vercel.app',
+    problem: 'Shipping a dashboard is only half the BI job. The analyst still has to write the executive readout and format a PPTX that survives the Monday review. Vendor tools produce generic captions, manual writing eats hours, and the dashboard to deck handoff is where insight quality gets lost.',
+    approach: 'Built a three step factory: pick, read, download. Six curated dashboards each carry five KPIs, three charts, and supporting rows. A streaming panel reveals a grounded narrative as Headline, What moved, So what, Talking points, and Risks. A server side pptxgenjs builder emits a seven slide deck themed to the dashboard, prebuilt at compile time and served from CDN cache, reusing the Dashboard Factory monorepo primitives.',
+    impact: 'Closed the other half of the BI workflow, dashboards out and stories back in. A modal to anchor swap on the deck route cut First Load JS from 14.2 kB to 167 B, an 85 times reduction, and three of four routes scored a perfect 100 across Performance, Accessibility, Best Practices, and SEO.',
+    color: '#f59e0b',
+  },
+  {
+    title: 'AI Sprint Intelligence',
+    description: 'Sprint review prep for an engineering team in five minutes. Pick a monthly sprint, filter by assignee or ticket type, and read the AI meeting brief that closes the page',
+    tags: ['Next.js', 'React'],
+    category: 'AI Engineering',
+    thumbnail: '/projects/sprint-intelligence.png',
+    projectLink: 'https://ai-portfolio-sprint-intelligence.vercel.app',
+    problem: 'Sprint review prep is one of the most expensive recurring meetings on an engineering team. The lead spends an hour every cycle pulling Jira screenshots and shaping a one page narrative. Standard Jira dashboards surface the raw data but stop one step short of telling the story.',
+    approach: 'Built a dashboard plus brief in one page across six monthly sprints and 138 hand curated tickets. A filter bar for assignee, type, and status feeds every surface: KPI strips, story points, cycle time and aging, workload, sprint health cards, and a per engineer deep dive with an activity heatmap. A streaming AI brief closes the page with an executive summary, watch list, and recommendations, all search param driven so every chart stays a server component.',
+    impact: 'Replaced an hour of manual consolidation with five minutes of reading. A manifest enrichment pattern holds the detail route at 50.4 kB even with every widget present, and it directly extends the Jira SSOT Data Portal work at Nutanix, themed across light and dark mode.',
+    color: '#ec4899',
+  },
 ]
 
-const filters = ['All', 'Tableau', 'Power BI', 'SQL', 'Databricks', 'Microsoft Fabric']
+const filters = ['All', 'Tableau', 'Power BI', 'SQL', 'Databricks', 'Microsoft Fabric', 'AI Engineering']
 
 function ProjectCard({ project, onClick, index = 0 }) {
   const [imgError, setImgError] = useState(false)
