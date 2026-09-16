@@ -3,12 +3,12 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const categories = [
   {
-    title: 'Data Visualization',
-    icon: '📊',
+    title: 'Lakehouse Platform',
+    icon: '☁️',
     skills: [
-      { name: 'Tableau', level: 90, tag: 'Certified' },
-      { name: 'Power BI', level: 70, tag: 'Certified' },
-      { name: 'Figma', level: 80, tag: 'Dashboard Design' },
+      { name: 'Databricks', level: 90, tag: 'Certified' },
+      { name: 'Apache Spark', level: 80 },
+      { name: 'PySpark', level: 85 },
     ],
   },
   {
@@ -16,14 +16,16 @@ const categories = [
     icon: '⚙️',
     skills: [
       { name: 'SQL', level: 90, tag: 'Advanced' },
-      { name: 'Python', level: 75, tag: 'PySpark' },
+      { name: 'Python', level: 75 },
     ],
   },
   {
-    title: 'Cloud Platforms',
-    icon: '☁️',
+    title: 'Data Visualization',
+    icon: '📊',
     skills: [
-      { name: 'Databricks', level: 80 },
+      { name: 'Power BI', level: 75, tag: 'Certified' },
+      { name: 'Tableau', level: 90, tag: 'Certified' },
+      { name: 'Figma', level: 80, tag: 'Dashboard Design' },
     ],
   },
   {

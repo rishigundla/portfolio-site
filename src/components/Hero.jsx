@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const techBadges = ['Tableau', 'Power BI', 'Databricks', 'SQL', 'PySpark']
+const techBadges = ['Databricks', 'Spark', 'PySpark', 'SQL', 'Power BI', 'Tableau']
 
 export default function Hero() {
   return (

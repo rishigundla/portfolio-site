@@ -6,7 +6,7 @@ const stats = [
   { label: 'Years Experience', value: 5, suffix: '+' },
   { label: 'High-Impact Dashboards', value: 100, suffix: '+' },
   { label: 'Companies', value: 4, suffix: '' },
-  { label: 'Certifications', value: 3, suffix: '' },
+  { label: 'Certifications', value: 5, suffix: '' },
   { label: 'Data Pipelines Built', value: 10, suffix: '+' },
   { label: 'Data Models Designed', value: 15, suffix: '+' },
 ]
@@ -87,11 +87,11 @@ export default function About() {
               polished, stakeholder-facing analytics that directly influence executive decision-making.
             </p>
             <p>
-              My technical practice spans both the analytics and engineering layers of the modern data
-              stack. I leverage Tableau, Power BI, SQL, and Figma to design and standardize dashboard
-              experiences that are analytically rigorous and built for enterprise-wide adoption, while
-              working with Databricks and PySpark to build resilient data pipelines
-              and orchestrate transformations at scale.
+              My technical practice spans both the engineering and analytics layers of the modern data
+              stack. I work with Databricks, Spark, PySpark, and SQL to build resilient Medallion
+              pipelines and orchestrate transformations at scale, and I leverage Power BI, Tableau,
+              and Figma to design and standardize dashboard experiences that are analytically
+              rigorous and built for enterprise-wide adoption.
             </p>
             <p>
               What sets me apart is the ability to think both upstream and downstream engineering

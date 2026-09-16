@@ -55,7 +55,7 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 - **Name**: Rishikesh Gundla
 - **Title**: Sr. Business Intelligence Engineer
 - **Tagline**: *"Turning complex data into strategic clarity"*
-- **Subtitle pills/badges**: `Tableau` . Power BI` . `Databricks` · `SQL` · `PySpark`
+- **Subtitle pills/badges**: `Databricks` · `Spark` · `PySpark` · `SQL` · `Power BI` · `Tableau`
 - **Subtle animated background** — abstract data grid, flowing particles, or minimal generative art canvas (disable on mobile for performance)
 - **CTA buttons**: "View My Work" (scrolls to projects) | "Download Resume" (PDF link) | "Let's Connect" (scrolls to contact)
 - **Resume PDF**: `public/Rishikesh_Gundla_Resume.pdf`
@@ -70,7 +70,7 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 
   > Senior Business Intelligence Engineer with over five years of experience transforming complex data into strategic, decision-ready insights. At Nutanix, I operate across the full data lifecycle from pipeline engineering and large-scale data transformation to polished, stakeholder-facing analytics that directly influence executive decision-making.
   >
-  > My technical practice spans both the analytics and engineering layers of the modern data stack. I leverage Tableau, Power BI, SQL, and Figma to design and standardize dashboard experiences that are analytically rigorous and built for enterprise-wide adoption, while working with Databricks and PySpark to build resilient data pipelines and orchestrate transformations at scale.
+  > My technical practice spans both the analytics and engineering layers of the modern data stack. I work with Databricks, Spark, PySpark, and SQL to build resilient Medallion pipelines and orchestrate transformations at scale, and I leverage Power BI, Tableau, and Figma to design and standardize dashboard experiences that are analytically rigorous and built for enterprise-wide adoption.
   >
   > What sets me apart is the ability to think both upstream and downstream engineering robust data infrastructure while understanding how stakeholders interpret and act on that data. I thrive in fast-paced, collaborative environments with a relentless focus on automation, data quality, and scalable design ensuring every pipeline built and every dashboard shipped drives clarity, trust, and measurable business impact.
 
@@ -92,8 +92,8 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 **Nutanix — Senior Business Intelligence Engineer**
 *April 2024 – Present (2 years) · Bangalore, India*
 
-- Architect and deliver high-impact dashboards, scalable data models, and end-to-end analytical solutions using Tableau, Power BI, and SQL powering data-driven decision-making across business units
-- Design and deploy enterprise-grade BI solutions leveraging Databricks and PySpark streamlining reporting workflows and reducing time-to-insight at scale
+- Design and deploy enterprise-grade BI solutions leveraging Databricks, Spark, and PySpark streamlining reporting workflows and reducing time-to-insight at scale
+- Architect and deliver high-impact dashboards, scalable data models, and end-to-end analytical solutions using SQL, Power BI, and Tableau powering data-driven decision-making across business units
 - Drive automation strategies across the analytics pipeline to enhance data quality, reduce processing latency, and optimize platform performance for near real-time decision-making
 - Prototype and standardize dashboard design systems and reusable templates in Figma ensuring visual consistency and enterprise-wide adoption of BI assets
 - Partner with cross-functional stakeholders to translate complex business requirements into scalable, insight-driven solutions delivering measurable outcomes
@@ -152,12 +152,14 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 
 | Category | Skill | Proficiency % | Tag |
 |---|---|---|---|
-| **Data Visualization** | Tableau | 90 | Certified |
-| **Data Visualization** | Power BI | 70 | Certified |
-| **Data Visualization** | Figma | 80 | Dashboard Design |
+| **Lakehouse Platform** | Databricks | 90 | Certified |
+| **Lakehouse Platform** | Apache Spark | 80 | |
+| **Lakehouse Platform** | PySpark | 85 | |
 | **Data Engineering** | SQL | 90 | Advanced |
-| **Data Engineering** | Python | 75 | PySpark |
-| **Cloud Platforms** | Databricks | 80 | |
+| **Data Engineering** | Python | 75 | |
+| **Data Visualization** | Power BI | 75 | Certified |
+| **Data Visualization** | Tableau | 90 | Certified |
+| **Data Visualization** | Figma | 80 | Dashboard Design |
 | **AI & Productivity** | Cursor AI | 85 | |
 | **AI & Productivity** | Claude Code | 85 | |
 | **Collaboration Tools** | Jira | 90 | |
@@ -172,7 +174,7 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 Each skill has a proficiency bar indicator. Edit the percentages above to customize.
 
 ### 6. Featured Projects (Portfolio Grid)
-- **Filterable card grid** with filter options: All | Tableau | Power BI | SQL | Databricks | AI Engineering
+- **Filterable card grid** with filter options: All | Databricks | SQL | Power BI | Tableau | AI Engineering
 - Each card: thumbnail (abstract data-themed placeholder graphic), title, short description, tech tags
 - **Hover effect**: card lifts with shadow, shows "View Details" overlay
 - **Click**: Opens modal/expanded view with problem statement, approach, impact, screenshots

@@ -5,6 +5,20 @@ import { HiExternalLink, HiShieldCheck } from 'react-icons/hi'
 
 const certifications = [
   {
+    title: 'Databricks Certified Data Engineer Associate',
+    issuer: 'Databricks',
+    color: '#ff3621',
+    badgeImage: 'https://cdn.simpleicons.org/databricks/FF3621',
+    verifyLink: 'https://credentials.databricks.com/cc641ea8-2b64-4b66-9e99-50107d00dbe6#acc.xbzjXOWS',
+  },
+  {
+    title: 'Databricks Certified Data Analyst Associate',
+    issuer: 'Databricks',
+    color: '#ff3621',
+    badgeImage: 'https://cdn.simpleicons.org/databricks/FF3621',
+    verifyLink: 'https://credentials.databricks.com/d361a4cb-4b7b-43b8-ba77-1049f25369b8#acc.KQYi47d9',
+  },
+  {
     title: 'Tableau Desktop Specialist',
     issuer: 'Tableau',
     color: 'rgb(var(--accent))',
