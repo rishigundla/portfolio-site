@@ -354,7 +354,7 @@ const projects = [
   },
 ]
 
-const filters = ['All', 'Tableau', 'Power BI', 'SQL', 'Databricks', 'Microsoft Fabric', 'AI Engineering']
+const filters = ['All', 'Tableau', 'Power BI', 'SQL', 'Databricks', 'AI Engineering']
 
 function ProjectCard({ project, onClick, index = 0 }) {
   const [imgError, setImgError] = useState(false)

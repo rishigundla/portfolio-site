@@ -13,7 +13,7 @@ const experiences = [
     color: 'rgb(var(--accent))',
     bullets: [
       'Architect and deliver high-impact dashboards, scalable data models, and end-to-end analytical solutions using Tableau, Power BI, and SQL powering data-driven decision-making across business units',
-      'Design and deploy enterprise-grade BI solutions leveraging Microsoft Fabric, Databricks, and PySpark streamlining reporting workflows and reducing time-to-insight at scale',
+      'Design and deploy enterprise-grade BI solutions leveraging Databricks and PySpark streamlining reporting workflows and reducing time-to-insight at scale',
       'Drive automation strategies across the analytics pipeline to enhance data quality, reduce processing latency, and optimize platform performance for near real-time decision-making',
       'Prototype and standardize dashboard design systems and reusable templates in Figma ensuring visual consistency and enterprise-wide adoption of BI assets',
       'Partner with cross-functional stakeholders to translate complex business requirements into scalable, insight-driven solutions delivering measurable outcomes',

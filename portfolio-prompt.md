@@ -46,7 +46,7 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 ### 2. About Me
 - Brief professional narrative (3–4 sentences max, written in first person):
   - Senior BI Engineer at Nutanix with expertise in transforming raw data into executive-grade dashboards and analytics solutions
-  - Core stack: Tableau, SQL, Figma (for data design systems), Power BI, Microsoft Fabric, Databricks, PySpark
+  - Core stack: Tableau, SQL, Figma (for data design systems), Power BI, Databricks, PySpark
   - Passionate about bridging the gap between data engineering and business intelligence
 - **Career stats ticker** (animated count-up on scroll):
   - `2+ Year at Nutanix` | `6+ High-Impact Dashboards` | `3+ Cross-Functional Teams` | `10+ Stakeholders Served`
@@ -56,7 +56,7 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 - **Visual skill grid or interactive tag cloud** — not a boring list
 - Group into categories:
   - **Core**: Tableau (Expert), SQL (Advanced), Figma (Dashboard Design)
-  - **Upskilling**: Power BI, Microsoft Fabric, Databricks, PySpark, Azure Data Factory
+  - **Upskilling**: Power BI, Databricks, PySpark, Azure Data Factory
   - **Tools & Workflows**: Jira, Confluence, Slack, Git
   - **Soft Skills**: Data Storytelling, Stakeholder Communication, Cross-functional Collaboration
 - Each skill could have a subtle proficiency indicator (bar, dot scale, or radial chart — keeping it tasteful, not gimmicky)

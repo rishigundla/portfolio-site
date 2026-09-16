@@ -24,7 +24,6 @@ const categories = [
     icon: '☁️',
     skills: [
       { name: 'Databricks', level: 80 },
-      { name: 'Microsoft Fabric', level: 50 },
     ],
   },
   {

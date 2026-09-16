@@ -90,7 +90,7 @@ export default function About() {
               My technical practice spans both the analytics and engineering layers of the modern data
               stack. I leverage Tableau, Power BI, SQL, and Figma to design and standardize dashboard
               experiences that are analytically rigorous and built for enterprise-wide adoption, while
-              working with Microsoft Fabric, Databricks, and PySpark to build resilient data pipelines
+              working with Databricks and PySpark to build resilient data pipelines
               and orchestrate transformations at scale.
             </p>
             <p>
