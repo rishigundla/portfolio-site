@@ -3,37 +3,37 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const categories = [
   {
-    title: 'Lakehouse Platform',
-    icon: '☁️',
-    skills: [
-      { name: 'Databricks', level: 90, tag: 'Certified' },
-      { name: 'Apache Spark', level: 80 },
-      { name: 'PySpark', level: 85 },
-    ],
-  },
-  {
-    title: 'Data Engineering',
+    title: 'Data Engineering and Lakehouse',
     icon: '⚙️',
     skills: [
-      { name: 'SQL', level: 90, tag: 'Advanced' },
-      { name: 'Python', level: 75 },
+      { name: 'Databricks', level: 90, tag: 'Certified' },
+      { name: 'Apache Spark', level: 70 },
+      { name: 'PySpark', level: 85 },
+      { name: 'SQL', level: 90 },
+      { name: 'Delta Lake', level: 85 },
+      { name: 'Unity Catalog', level: 80 },
+      { name: 'Lakeflow', level: 80 },
     ],
   },
   {
-    title: 'Data Visualization',
+    title: 'Business Intelligence',
     icon: '📊',
     skills: [
-      { name: 'Power BI', level: 75, tag: 'Certified' },
+      { name: 'Power BI', level: 80, tag: 'Certified' },
       { name: 'Tableau', level: 90, tag: 'Certified' },
+      { name: 'AI/BI Dashboards', level: 80 },
       { name: 'Figma', level: 80, tag: 'Dashboard Design' },
     ],
   },
   {
-    title: 'AI & Productivity',
+    title: 'AI and Governance',
     icon: '🤖',
     skills: [
-      { name: 'Cursor AI', level: 85 },
+      { name: 'Genie Agents', level: 80 },
       { name: 'Claude Code', level: 85 },
+      { name: 'Cursor AI', level: 85 },
+      { name: 'MCP Integrations', level: 80 },
+      { name: 'Data Governance', level: 75, tag: 'RLS, masking, ABAC' },
     ],
   },
   {

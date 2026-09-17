@@ -2,8 +2,42 @@ import { motion } from 'framer-motion'
 import { useScrollReveal, useCountUp } from '../hooks/useScrollReveal'
 import { HiUser } from 'react-icons/hi'
 
+const whatIDo = [
+  'Build scalable ETL and ELT pipelines on Azure Databricks with Spark, PySpark, SQL',
+  'Design Lakehouse architectures with Medallion layers, Delta Lake, and Unity Catalog governance',
+  'Deliver batch and streaming ingestion with Auto Loader, change data capture, and Lakeflow',
+  'Model data into dimensional models and a governed metrics layer for self service analytics',
+  'Enable AI powered analytics with Genie Agents, AI/BI Dashboards, and natural language querying',
+  'Ship executive and self service dashboards in Power BI and Tableau',
+  'Drive requirement gathering, stakeholder management, and cross team collaboration',
+]
+
+const knownFor = [
+  'Owning the full path from raw data to the KPI leadership acts on',
+  'Turning fragmented data sources into one governed source of truth',
+  'Building data quality, lineage, and access control into the pipeline',
+  'Asking the right questions before building the solution',
+  'Creating dashboards that leadership actually uses',
+]
+
+function FocusList({ title, items }) {
+  return (
+    <div className="glass-card p-5 sm:p-6">
+      <p className="font-mono text-xs uppercase tracking-wider text-accent mb-4">{title}</p>
+      <ul className="space-y-2">
+        {items.map((item) => (
+          <li key={item} className="flex gap-3 text-sm sm:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
+            <span className="w-1 h-1 rounded-full mt-2.5 shrink-0 bg-accent" />
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
 const stats = [
-  { label: 'Years Experience', value: 5, suffix: '+' },
+  { label: 'Years Experience', value: 6, suffix: '+' },
   { label: 'High-Impact Dashboards', value: 100, suffix: '+' },
   { label: 'Companies', value: 4, suffix: '' },
   { label: 'Certifications', value: 5, suffix: '' },
@@ -81,26 +115,34 @@ export default function About() {
 
           <div className="space-y-5 text-base sm:text-lg leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
             <p>
-              Senior Business Intelligence Engineer with over five years of experience transforming
-              complex data into strategic, decision-ready insights. At Nutanix, I operate across the
-              full data lifecycle from pipeline engineering and large-scale data transformation to
-              polished, stakeholder-facing analytics that directly influence executive decision-making.
+              I am a Senior BI Engineer with 6+ years of experience building enterprise data platforms
+              and analytics ecosystems. I specialize in blending Data Engineering, Business
+              Intelligence, and AI driven automation on Databricks to help organizations make smarter,
+              faster, and more trusted decisions.
             </p>
             <p>
-              My technical practice spans both the engineering and analytics layers of the modern data
-              stack. I work with Databricks, Spark, PySpark, and SQL to build resilient Medallion
-              pipelines and orchestrate transformations at scale, and I leverage Power BI, Tableau,
-              and Figma to design and standardize dashboard experiences that are analytically
-              rigorous and built for enterprise-wide adoption.
-            </p>
-            <p>
-              What sets me apart is the ability to think both upstream and downstream engineering
-              robust data infrastructure while understanding how stakeholders interpret and act on that
-              data. I thrive in fast-paced, collaborative environments with a relentless focus on
-              automation, data quality, and scalable design ensuring every pipeline built and every
-              dashboard shipped drives clarity, trust, and measurable business impact.
+              My core strength is end to end ownership. I understand the business question, translate
+              it into modern data architecture, and deliver pipelines, data models, and dashboards
+              that are reliable, governed, and ready for AI.
             </p>
           </div>
+        </motion.div>
+
+        {/* What I Do + What I Am Known For */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="mt-10"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <FocusList title="What I Do" items={whatIDo} />
+            <FocusList title="What I Am Known For" items={knownFor} />
+          </div>
+          <p className="mt-8 text-base sm:text-lg leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
+            While I work across the stack, I stay hands on in architecture decisions, complex
+            transformations, and performance tuning.
+          </p>
         </motion.div>
 
         {/* Career Stats */}

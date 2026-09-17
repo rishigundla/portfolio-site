@@ -68,14 +68,17 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 - **Profile Picture**: `public/profile.jpeg` ✅ (placed)
 - **Professional summary** (use this verbatim, style it beautifully):
 
-  > Senior Business Intelligence Engineer with over five years of experience transforming complex data into strategic, decision-ready insights. At Nutanix, I operate across the full data lifecycle from pipeline engineering and large-scale data transformation to polished, stakeholder-facing analytics that directly influence executive decision-making.
+  > I am a Senior BI Engineer with 6+ years of experience building enterprise data platforms and analytics ecosystems. I specialize in blending Data Engineering, Business Intelligence, and AI driven automation on Databricks to help organizations make smarter, faster, and more trusted decisions.
   >
-  > My technical practice spans both the analytics and engineering layers of the modern data stack. I work with Databricks, Spark, PySpark, and SQL to build resilient Medallion pipelines and orchestrate transformations at scale, and I leverage Power BI, Tableau, and Figma to design and standardize dashboard experiences that are analytically rigorous and built for enterprise-wide adoption.
-  >
-  > What sets me apart is the ability to think both upstream and downstream engineering robust data infrastructure while understanding how stakeholders interpret and act on that data. I thrive in fast-paced, collaborative environments with a relentless focus on automation, data quality, and scalable design ensuring every pipeline built and every dashboard shipped drives clarity, trust, and measurable business impact.
+  > My core strength is end to end ownership. I understand the business question, translate it into modern data architecture, and deliver pipelines, data models, and dashboards that are reliable, governed, and ready for AI.
+
+- **Two lists under the summary** (two glass cards side by side on desktop, stacked on mobile):
+  - **What I Do**: Build scalable ETL and ELT pipelines on Azure Databricks with Spark, PySpark, SQL | Design Lakehouse architectures with Medallion layers, Delta Lake, and Unity Catalog governance | Deliver batch and streaming ingestion with Auto Loader, change data capture, and Lakeflow | Model data into dimensional models and a governed metrics layer for self service analytics | Enable AI powered analytics with Genie Agents, AI/BI Dashboards, and natural language querying | Ship executive and self service dashboards in Power BI and Tableau | Drive requirement gathering, stakeholder management, and cross team collaboration
+  - **What I Am Known For**: Owning the full path from raw data to the KPI leadership acts on | Turning fragmented data sources into one governed source of truth | Building data quality, lineage, and access control into the pipeline | Asking the right questions before building the solution | Creating dashboards that leadership actually uses
+- **Closing line** (full width paragraph under the two lists): While I work across the stack, I stay hands on in architecture decisions, complex transformations, and performance tuning.
 
 - **Career stats ticker** (animated count-up on scroll):
-  - `5+ Years Experience` | `100+ High-Impact Dashboards` | `4 Companies` | `3 Certifications` | `10+ Data Pipelines Built` | `15+ Data Models Designed`
+  - `6+ Years Experience` | `100+ High-Impact Dashboards` | `4 Companies` | `5 Certifications` | `10+ Data Pipelines Built` | `15+ Data Models Designed`
 - **Mobile**: Stats display as a 2×2 grid instead of a horizontal row
 
 ### 4. Experience / Career Timeline
@@ -92,14 +95,15 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 **Nutanix — Senior Business Intelligence Engineer**
 *April 2024 – Present (2 years) · Bangalore, India*
 
-- Design and deploy enterprise-grade BI solutions leveraging Databricks, Spark, and PySpark streamlining reporting workflows and reducing time-to-insight at scale
-- Architect and deliver high-impact dashboards, scalable data models, and end-to-end analytical solutions using SQL, Power BI, and Tableau powering data-driven decision-making across business units
-- Drive automation strategies across the analytics pipeline to enhance data quality, reduce processing latency, and optimize platform performance for near real-time decision-making
-- Prototype and standardize dashboard design systems and reusable templates in Figma ensuring visual consistency and enterprise-wide adoption of BI assets
-- Partner with cross-functional stakeholders to translate complex business requirements into scalable, insight-driven solutions delivering measurable outcomes
-- Produce high-impact analytical reports and data narratives that directly inform strategic initiatives, operational improvements, and revenue growth at the leadership level
-- Integrate AI-powered development tools such as Cursor AI and Claude Code into daily workflows to accelerate dashboard prototyping and automate engineering tasks
-- Upskill teams in data literacy through training programs and knowledge-sharing initiatives, fostering a culture of analytical self-sufficiency
+- Design, build, and maintain scalable ETL and ELT pipelines on Azure Databricks with PySpark, Spark SQL, following Medallion architecture on Delta Lake with Unity Catalog governance
+- Build batch and streaming ingestion with Auto Loader, Lakeflow Connect change data capture from PostgreSQL and Salesforce, and landing zones on ADLS with SCD Type 2 streaming tables
+- Develop Spark Declarative Pipelines with data quality expectations, orchestrate with Lakeflow Jobs, and deploy through CI/CD with Databricks Asset Bundles and Git
+- Model raw data into tested, documented dimensional models and a governed metrics layer on Unity Catalog metric views, serving one set of KPI definitions to Power BI, Tableau, AI/BI Dashboards, and Genie for 50+ executive KPIs
+- Implement data governance with row level security, column masking, attribute based access control, lineage, and audit
+- Optimise performance and cost with Liquid Clustering, Predictive Optimization, Photon, right sized compute, and Spark tuning for skew and shuffle
+- Enable LLM powered self service analytics with Genie Agents on governed metrics and benchmark based evaluation
+- Partner with cross functional stakeholders to define KPIs and ship 100+ executive and self service dashboards in Power BI and Tableau, and designed the enterprise dashboard design system in Figma that cut build time from weeks to days
+- Accelerate delivery with AI assisted development (Claude Code, Cursor AI, MCP integrations) and mentor analysts through data literacy programmes
 
 ---
 
@@ -152,16 +156,22 @@ Think: Bloomberg Terminal meets a high-end design portfolio. Clean grids. Data v
 
 | Category | Skill | Proficiency % | Tag |
 |---|---|---|---|
-| **Lakehouse Platform** | Databricks | 90 | Certified |
-| **Lakehouse Platform** | Apache Spark | 80 | |
-| **Lakehouse Platform** | PySpark | 85 | |
-| **Data Engineering** | SQL | 90 | Advanced |
-| **Data Engineering** | Python | 75 | |
-| **Data Visualization** | Power BI | 75 | Certified |
-| **Data Visualization** | Tableau | 90 | Certified |
-| **Data Visualization** | Figma | 80 | Dashboard Design |
-| **AI & Productivity** | Cursor AI | 85 | |
-| **AI & Productivity** | Claude Code | 85 | |
+| **Data Engineering and Lakehouse** | Databricks | 90 | Certified |
+| **Data Engineering and Lakehouse** | Apache Spark | 70 | |
+| **Data Engineering and Lakehouse** | PySpark | 85 | |
+| **Data Engineering and Lakehouse** | SQL | 90 | |
+| **Data Engineering and Lakehouse** | Delta Lake | 85 | |
+| **Data Engineering and Lakehouse** | Unity Catalog | 80 | |
+| **Data Engineering and Lakehouse** | Lakeflow | 80 | |
+| **Business Intelligence** | Power BI | 80 | Certified |
+| **Business Intelligence** | Tableau | 90 | Certified |
+| **Business Intelligence** | AI/BI Dashboards | 80 | |
+| **Business Intelligence** | Figma | 80 | Dashboard Design |
+| **AI and Governance** | Genie Agents | 80 | |
+| **AI and Governance** | Claude Code | 85 | |
+| **AI and Governance** | Cursor AI | 85 | |
+| **AI and Governance** | MCP Integrations | 80 | |
+| **AI and Governance** | Data Governance | 75 | RLS, masking, ABAC |
 | **Collaboration Tools** | Jira | 90 | |
 | **Collaboration Tools** | Confluence | 80 | |
 | **Collaboration Tools** | Slack | 90 | |
